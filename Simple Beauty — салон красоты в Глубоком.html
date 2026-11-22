@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Simple Beauty — салон красоты в Глубоком</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#faf7f2;--surface:#fff;--ink:#1c1816;--muted:#6b6560;--gold:#b8925a;--green:#3f5a4a;--line:#e6dccb;--dark:#1c1816;--darkink:#faf7f2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media not all{:root:not([data-theme="light"]){--bg:#141211;--surface:#1e1b19;--ink:#f3eee6;--muted:#a39b92;--line:#3a332b;--dark:#0c0b0a;--darkink:#f3eee6}}
+:root[data-theme="never"]{--bg:#141211;--surface:#1e1b19;--ink:#f3eee6;--muted:#a39b92;--line:#3a332b;--dark:#0c0b0a;--darkink:#f3eee6}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 Montserrat,system-ui,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:56px 0 44px}
+.eyebrow{letter-spacing:.5em;font-size:12px;color:var(--muted);margin:0}
+h1{font:600 clamp(44px,12vw,72px)/1 "Cormorant Garamond",Georgia,serif;letter-spacing:.12em;margin:8px 0 0;text-transform:uppercase}
+.script{font:italic 500 clamp(26px,7vw,38px) "Cormorant Garamond",Georgia,serif;color:var(--gold);margin:0}
+.tag{margin:22px 0 28px;color:var(--muted);letter-spacing:.2em;font-size:12px;text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;font-size:14px;letter-spacing:.06em;text-decoration:none;border:1.5px solid var(--gold);color:var(--ink)}
+.btn.p{background:var(--gold);color:#1c1816}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font:600 clamp(30px,8vw,42px)/1.15 "Cormorant Garamond",Georgia,serif;text-align:center;margin:0 0 8px}
+.sub{text-align:center;color:var(--muted);margin:0 0 28px}
+.new{display:inline-block;background:var(--green);color:#fff;font-size:11px;font-weight:600;letter-spacing:.15em;padding:4px 12px;border-radius:999px;margin-bottom:12px}
+.center{text-align:center}
+.price{border:1.5px solid var(--gold);border-radius:18px;padding:18px;text-align:center;background:var(--surface);margin-bottom:14px}
+.price.d{background:var(--dark);color:var(--darkink);border-color:var(--dark)}
+.price b{display:block;font-size:22px;letter-spacing:.06em}
+.price span{font-size:13px;color:var(--muted)}.price.d span{color:#d8cfc2}
+.badge{display:inline-block;background:var(--gold);color:#1c1816;font-size:10px;font-weight:600;letter-spacing:.15em;padding:3px 12px;border-radius:999px;margin-bottom:8px}
+.steps{list-style:none;padding:0;margin:28px 0 0}
+.steps li{border-left:3px solid var(--gold);padding:2px 0 2px 14px;margin-bottom:16px}
+.steps strong{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.steps span{color:var(--muted);font-size:14px}
+.gets{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.gets div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center;font-size:14px;font-weight:500}
+.gets i{display:block;color:var(--gold);font-style:normal;font-size:18px}
+.note{background:var(--surface);border:1px dashed var(--gold);border-radius:16px;padding:22px;text-align:center;color:var(--muted)}
+.contacts{background:var(--dark);color:var(--darkink);border-radius:22px;padding:32px 22px;text-align:center}
+.contacts h2{color:var(--darkink)}
+.contacts p{margin:6px 0;color:#d8cfc2}
+.contacts a.tel{display:block;font:600 28px "Cormorant Garamond",Georgia,serif;color:var(--gold);text-decoration:none;margin:14px 0}
+.contacts .btn{color:var(--darkink)}
+.contacts .btn.p{color:#1c1816}
+.c{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden}.c summary{list-style:none;cursor:pointer;padding:16px 18px;font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:12px}.c summary::-webkit-details-marker{display:none}.c summary::after{content:'+';color:var(--gold);font-size:24px;font-weight:400}.c[open] summary::after{content:'–'}.c .b{padding:0 18px 12px}.r{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}.r b{white-space:nowrap;font-weight:600}.r small{display:block;color:var(--muted);font-size:12px}.c h3{font:600 12px Montserrat,sans-serif;letter-spacing:.12em;color:var(--gold);text-transform:uppercase;margin:16px 0 4px}.c p{color:var(--muted);font-size:13px;margin:10px 0 4px}.t{overflow-x:auto}.t table{border-collapse:collapse;width:100%;font-size:13px;min-width:300px}.t th,.t td{padding:8px 6px;border-top:1px solid var(--line);text-align:right}.t th:first-child,.t td:first-child{text-align:left}.t th{color:var(--muted);font-weight:500}.how{text-align:center;color:var(--muted);font-size:14px;margin-top:22px}
+footer{text-align:center;color:var(--muted);font-size:12px;letter-spacing:.25em;text-transform:uppercase;padding:32px 0 40px}
+</style>
+</head>
+<body>
+<header class="hero w">
+<p class="eyebrow">SALON</p>
+<h1>Simple</h1>
+<p class="script">Beauty</p>
+<p class="tag">Просто о лучшем · г. Глубокое</p>
+<div class="btns">
+<a class="btn p" href="tel:+375255146114">Позвонить</a>
+<a class="btn" href="viber://chat?number=%2B375255146114">Viber</a>
+<a class="btn" href="#headspa">Head SPA</a>
+</div>
+</header>
+
+<section id="headspa"><div class="w">
+<div class="center"><span class="new">НОВАЯ УСЛУГА</span></div>
+<h2>Head SPA с Балийским водопадом</h2>
+<p class="sub">Гармония от макушки до кончиков пальцев</p>
+<p class="center" style="color:var(--muted)">Два часа абсолютной тишины, когда весь мир ставится на паузу. Мы бережно снимем тяжесть в шее и спине, освежим кожу лица, вернём волосам зеркальный блеск и позаботимся о вас.</p>
+<div class="price"><b>120 МИНУТ — 240 BYN</b><span>Классический ритуал (все 17 этапов релакса и ухода)</span></div>
+<div class="price d"><div class="badge">ВЫБОР 90% ГОСТЕЙ</div><b>150 МИНУТ — 270 BYN</b><span>Классический ритуал + 30 минут глубокого массажа спины</span></div>
+<ol class="steps">
+<li><strong>Ароматерапия</strong><span>Погружение в атмосферу спокойствия и глубокого расслабления.</span></li>
+<li><strong>Массаж рук, декольте, шеи и плеч</strong><span>Снятие мышечных зажимов и усталости в шейно-воротниковой зоне.</span></li>
+<li><strong>Массаж головы ручными техниками и гребнями</strong><span>Проработка активных точек, улучшение кровообращения и рост волос.</span></li>
+<li><strong>Массаж головы «Золотой дугой» и невесомое пенное облако</strong><span>Деликатное очищение и снятие напряжения с кожи головы.</span></li>
+<li><strong>SPA-уход за лицом (3 этапа)</strong><span>Охлаждающий массаж криосферами, пенный ритуал и увлажняющая маска.</span></li>
+<li><strong>Пилинг кожи головы</strong><span>Глубокое очищение от загрязнений и остатков стайлинга.</span></li>
+<li><strong>Аквамедитация под струями Балийского водопада</strong><span>Перезагрузка нервной системы, лёгкость и восстановление.</span></li>
+<li><strong>Люкс-уход CHI Royal в паровой капсуле</strong><span>Королевское восстановление для зеркального блеска и шелковистости (отдельно от 110 BYN — уже внутри).</span></li>
+<li><strong>SPA-уход для ног</strong><span>Прорабатывающий расслабляющий комплекс для лёгкости стоп.</span></li>
+<li><strong>Деликатная сушка волос и чайная церемония</strong><span>Вы выходите с красивой укладкой и наслаждаетесь паузой с чаем.</span></li>
+</ol>
+<div class="gets">
+<div><i>✦</i>Глубокое расслабление</div>
+<div><i>✧</i>Сияние кожи и блеск волос</div>
+<div><i>♡</i>Лёгкость в теле и мыслях</div>
+<div><i>☀</i>Энергию и вдохновение</div>
+</div>
+<p class="center" style="margin-top:24px;color:var(--muted)">Для записи напишите «ВОДОПАД» в Direct</p>
+</div></section>
+
+<section id="services"><div class="w">
+<h2>Услуги и цены</h2>
+<p class="sub">Полный прайс салона</p>
+<details class='c'><summary>Консультация косметолога</summary><div class='b'><div class='r'><span>Диагностика кожи, определение типа и потребностей, разбор домашнего ухода, подбор и заказ косметики, план процедур, рекомендации по питанию и «ритуалам» красоты, ответы на вопросы</span><b>45 BYN</b></div></div></details>
+<details class='c'><summary>Косметические услуги</summary><div class='b'><div class='r'><span>Уход за чувствительной кожей</span><b>70 BYN</b></div><div class='r'><span>Уход за проблемной кожей</span><b>70 BYN</b></div><div class='r'><span>Уход «Облако Афродиты»</span><b>80 BYN</b></div><div class='r'><span>Фракционная мезотерапия</span><b>75–110 BYN</b></div><div class='r'><span>Карбокситерапия</span><b>70 BYN</b></div><div class='r'><span>Пилинг лица</span><b>70–220 BYN</b></div><div class='r'><span>Чистка лица</span><b>50–65 BYN</b></div></div></details>
+<details class='c'><summary>Окрашивание и уход</summary><div class='b'><div class='r'><span>Окрашивание корней<small>тон, без рассветления</small></span><b>90 BYN</b></div><div class='r'><span>Окрашивание корней + длина<small>тон, без рассветления</small></span><b>130–250 BYN</b></div><div class='r'><span>Тонирование</span><b>100–180 BYN</b></div><div class='r'><span>Чистка блонда</span><b>80–100 BYN</b></div><div class='r'><span>Затемнение блонда в натуральный тон</span><b>160–240 BYN</b></div><div class='r'><span>Консультация колориста</span><b>20 BYN</b></div><div class='r'><span>Королевский уход Royal</span><b>110–210 BYN</b></div><div class='r'><span>Холодное восстановление</span><b>140–250 BYN</b></div><div class='r'><span>Авторский уход</span><b>110–210 BYN</b></div></div></details>
+<details class='c'><summary>Окрашивание с рассветлением</summary><div class='b'><div class='r'><span>Сложное окрашивание AirTouch</span><b>250–600 BYN</b></div><div class='r'><span>Контуринг AirTouch</span><b>140–220 BYN</b></div><div class='r'><span>TotalBlond</span><b>120–350 BYN</b></div><div class='r'><span>Выход из чёрного</span><b>250–600 BYN</b></div><div class='r'><span>Шатуш</span><b>250–600 BYN</b></div><div class='r'><span>Бразильский блонд<small>от 40 см</small></span><b>250–600 BYN</b></div><div class='r'><span>Балаяж / омбре</span><b>250–600 BYN</b></div><div class='r'><span>Мелирование</span><b>230–500 BYN</b></div></div></details>
+<details class='c'><summary>Стрижка и укладка</summary><div class='b'><h3>Стрижка волос</h3><div class='r'><span>Подравнивание волос</span><b>25–35 BYN</b></div><div class='r'><span>Стрижка чёлки</span><b>20 BYN</b></div><div class='r'><span>Каскады, лесенки</span><b>55 BYN</b></div><div class='r'><span>Каре</span><b>50 BYN</b></div><div class='r'><span>Пикси, гарсон, французское каре</span><b>50 BYN</b></div><h3>Укладка волос</h3><div class='r'><span>Короткие волосы<small>мытьё головы, объём феном, стайлинг</small></span><b>50 BYN</b></div><div class='r'><span>Средняя длина волос<small>мытьё головы, объём феном, стайлинг, накрутка</small></span><b>60 BYN</b></div><div class='r'><span>Мытьё головы</span><b>30 BYN</b></div></div></details>
+<details class='c'><summary>Перманентный макияж</summary><div class='b'><div class='r'><span>Первичная процедура ПМ век</span><b>170 BYN</b></div><div class='r'><span>Коррекция ПМ век<small>1–2 мес</small></span><b>100 BYN</b></div><div class='r'><span>Обновление ПМ век<small>спустя 1 год</small></span><b>140 BYN</b></div><div class='r'><span>Первичная процедура ПМ брови / губы</span><b>220 BYN</b></div><div class='r'><span>Коррекция ПМ брови / губы<small>1–2 мес</small></span><b>120 BYN</b></div><div class='r'><span>Коррекция ПМ брови / губы<small>спустя 1 год</small></span><b>170 BYN</b></div><p>Коррекция работы не нашего мастера оплачивается как полноценная первичная процедура.</p></div></details>
+<details class='c'><summary>Тату</summary><div class='b'><h3>Надписи — тонкий шрифт</h3><div class='r'><span>До 5 см</span><b>от 80 BYN</b></div><div class='r'><span>До 10 см</span><b>от 120 BYN</b></div><div class='r'><span>До 15 см</span><b>от 150 BYN</b></div><h3>Эскизы — контурные тату</h3><div class='r'><span>До 5 см</span><b>от 100 BYN</b></div><div class='r'><span>До 10 см</span><b>от 130 BYN</b></div><div class='r'><span>До 15 см</span><b>от 170 BYN</b></div><h3>Тату с тенями</h3><div class='r'><span>До 5 см</span><b>от 120 BYN</b></div><div class='r'><span>До 10 см</span><b>от 170 BYN</b></div><div class='r'><span>До 15 см</span><b>от 250 BYN</b></div><p>Более точную информацию по стоимости мастер сможет озвучить после бесплатной консультации исходя из эскиза, размера и места расположения.</p></div></details>
+<details class='c'><summary>Уход за бровями</summary><div class='b'><div class='r'><span>Коррекция бровей<small>30 мин</small></span><b>10 BYN</b></div><div class='r'><span>Коррекция бровей с окрашиванием краской<small>45 мин</small></span><b>30 BYN</b></div><div class='r'><span>Долговременная укладка без окрашивания<small>1 ч</small></span><b>25 BYN</b></div><div class='r'><span>Долговременная укладка бровей с окрашиванием<small>1 ч</small></span><b>45 BYN</b></div><div class='r'><span>Коррекция нежелательных волос на лице (одна зона)<small>10 мин</small></span><b>5 BYN</b></div><h3>Комплексы</h3><div class='r'><span>Долговременная укладка бровей с окрашиванием + ламинирование ресниц<small>1 ч</small></span><b>75 BYN</b></div><div class='r'><span>Коррекция, окрашивание бровей и ламинирование ресниц<small>1 ч</small></span><b>65 BYN</b></div></div></details>
+<details class='c'><summary>Ресницы</summary><div class='b'><div class='r'><span>Ламинирование ресниц<small>ламинирование + окрашивание + ботокс</small></span><b>50 BYN</b></div><div class='r'><span>Окрашивание ресниц</span><b>10 BYN</b></div><h3>Наращивание ресниц</h3><div class='r'><span>Мастер Татьяна</span><b>80 BYN</b></div><div class='r'><span>Загущение углов, мастер Татьяна</span><b>60 BYN</b></div><div class='r'><span>Снятие нарощенных ресниц</span><b>10 BYN</b></div></div></details>
+<details class='c'><summary>Массаж</summary><div class='b'><h3>Массаж спины</h3><div class='r'><span>30 мин</span><b>30 BYN</b></div><div class='r'><span>45 мин</span><b>45 BYN</b></div><div class='r'><span>60 мин</span><b>60 BYN</b></div><h3>Массаж всего тела</h3><p style='margin-top:0'>Классический / релакс / лимфодренажный / спортивный</p><div class='r'><span>60 мин</span><b>65 BYN</b></div><div class='r'><span>90 мин</span><b>95 BYN</b></div><h3>Массаж антицеллюлитный</h3><div class='r'><span>40 мин<small>одна зона</small></span><b>50 BYN</b></div><div class='r'><span>60 мин<small>две зоны</small></span><b>70 BYN</b></div><div class='r'><span>90 мин<small>ноги, живот, руки, ягодицы</small></span><b>100 BYN</b></div></div></details>
+<details class='c'><summary>Абонементы на массаж</summary><div class='b'><h3>Массаж спины</h3><div class='t'><table><tr><th></th><th>30 мин</th><th>45 мин</th><th>60 мин</th></tr><tr><td>5 сеансов</td><td>144</td><td>216</td><td>288</td></tr><tr><td>7 сеансов</td><td>200</td><td>300</td><td>400</td></tr><tr><td>10 сеансов</td><td>270</td><td>405</td><td>540</td></tr></table></div><h3>Массаж всего тела</h3><p style='margin-top:0'>На выбор: классический / лимфодренажный / спортивный / релакс</p><div class='t'><table><tr><th></th><th>60 мин</th><th>90 мин</th></tr><tr><td>5 сеансов</td><td>312</td><td>456</td></tr><tr><td>7 сеансов</td><td>433</td><td>632</td></tr><tr><td>10 сеансов</td><td>585</td><td>855</td></tr></table></div><h3>Антицеллюлитный массаж</h3><div class='t'><table><tr><th></th><th>40 мин<br>одна зона</th><th>60 мин<br>две зоны</th><th>90 мин<br>руки, ноги, ягодицы, живот</th></tr><tr><td>5 сеансов</td><td>240</td><td>335</td><td>480</td></tr><tr><td>7 сеансов</td><td>333</td><td>465</td><td>665</td></tr><tr><td>10 сеансов</td><td>450</td><td>630</td><td>900</td></tr></table></div><p>Цены указаны в BYN.</p></div></details>
+<details class='c'><summary>Солярий</summary><div class='b'><div class='r'><span>1 минута</span><b>2,80 BYN</b></div><div class='r'><span>Абонемент от 30 минут</span><b>2,50 BYN/мин</b></div></div></details>
+<details class='c'><summary>Прокол системой Inverness</summary><div class='b'><div class='r'><span>Прокол мочек ушей<small>в стоимость входит базовая серёжка</small></span><b>100 BYN</b></div><div class='r'><span>Прокол хряща или козелка</span><b>90 BYN</b></div><p>Деткам после первой процедуры прокола ушей вручается сертификат.</p></div></details>
+<p class='how'>Для записи напишите в Direct, Viber или позвоните: <a href='tel:+375255146114' style='color:var(--gold);font-weight:600;text-decoration:none'>+375 (25) 514-61-14</a></p>
+</div></section>
+
+<section id="contacts"><div class="w">
+<div class="contacts">
+<h2>Контакты</h2>
+<p>г. Глубокое, ул. Ленина, 7</p>
+<p>Вход и заезд со двора, с обратной стороны здания. Напротив входа — парковка.</p>
+<a class="tel" href="tel:+375255146114">+375 (25) 514-61-14</a>
+<p>Запись и подарочные сертификаты — по телефону, в Direct или Viber</p>
+<div class="btns" style="margin-top:20px">
+<a class="btn p" href="tel:+375255146114">Позвонить</a>
+<a class="btn" href="viber://chat?number=%2B375255146114">Viber</a>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Глубокое+Ленина+7" target="_blank" rel="noopener">Маршрут</a>
+</div>
+</div>
+</div></section>
+
+<footer>Simple Beauty — просто о лучшем</footer>
+</body>
+</html>
